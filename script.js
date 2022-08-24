@@ -11,7 +11,7 @@ const canvas_heigh = canvas.height = 600;
 const canvas_width = canvas.width = 600;
 
 const playerImage = new Image();
-playerImage.src = "../../images/shadow_dog.png";
+playerImage.src = "shadow_dog.png";
 const spriteWidth = 575;
 const spriteHeight = 523;
 
