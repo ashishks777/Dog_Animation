@@ -77,11 +77,7 @@ for(let j=0;j<state.frames;j++){
 spriteAnimations[state.name]=frames;
 
 });
-
-console.log(spriteAnimations);
-
-
-function animate() {
+window.addEventListener('load',function(){function animate() {
     ctx.clearRect(0, 0, canvas_width, canvas_heigh);
     let position = Math.floor(gameFrame / stageredFrames) % spriteAnimations[playerState].loc.length;
     let frameX = spriteWidth * position;
@@ -92,4 +88,7 @@ function animate() {
     gameFrame++;
     requestAnimationFrame(animate);
 }
-animate();
+animate();});
+
+
+
